@@ -6,5 +6,7 @@ Software is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s
 
 ![Software](assets/software.png)
 
+![Segmentation](assets/1-0001_visualization.png)
+
 ## Acknowledgments
 * The code is heavily borrowed from [Cellpose](https://github.com/MouseLand/cellpose), we thank the authors for their great effort.
