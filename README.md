@@ -1,4 +1,4 @@
-# <p>  <b>Cellpose </b> </p>
+# <p>  <b>Sophon </b> </p>
 
 A generalist algorithm for nanocrystal segmentation in transmission electron microscopy (TEM) images (v1.0).
 
