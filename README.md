@@ -8,17 +8,15 @@ Software is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s
 
 ![Segmentation](assets/1-0001_visualization.png)
 
-## Comparison with Cellpose
+## Abstract
 
-Cellpose:
+## Training dataset
 
-![Segmentation](assets/comparison/cellpose-spec1.png)
+## Performance
 
-Ours:
+## Results
 
-![Ours](assets/comparison/ours1.png)
-
-## Train your own model
+## Train your own model (Finetune)
 
 Please refer to [Training Installation](train/README.md) for installation instructions.
 
@@ -27,4 +25,6 @@ Please refer to [Training Installation](train/README.md) for installation instru
 Please refer to [Software Usage](docs/software.md) for software usage.
 
 ## Acknowledgments
-The code is heavily borrowed from [Cellpose](https://github.com/MouseLand/cellpose), we thank the authors for their great effort.
+The GUI code is borrowed from [Cellpose](https://github.com/MouseLand/cellpose), we thank the authors for their great effort.
+
+## Paper
