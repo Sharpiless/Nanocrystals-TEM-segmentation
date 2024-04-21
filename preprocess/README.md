@@ -5,7 +5,9 @@ A generalist algorithm for nanocrystal segmentation in transmission electron mic
 ## Download
 
 Download the trained detection model from [Google Drive](), and place it into "weights" folder:
+
 ```
+preprocess
 ├── weights
     ├── cascade_hrnet_rfla_epoch_12.pth
 ```
@@ -53,4 +55,6 @@ cd preprocess
 python predict.py --inputs ../data/weak_data/images --outputs ../data/weak_data/weak_labels
 ```
 
-Weak labels should be generated and saved to "data/weak_data/weak_labels".
+Weak labels should be generated and saved to "data/weak_data/weak_labels". One example of weak labels can be visualized as follows:
+
+![Weakly training label](../data/weak_data_examples/weak_labels/1-0001.png)
