@@ -44,6 +44,11 @@ Please refer to [Training Installation](train/README.md) for installation instru
 
 ## How to use our software
 
+If you use Sophon, please cite our [paper]():
+```
+xxx, xxx, & xxx. (202x). xxxx: xxxxxx xxxxx xxxxx. Xxxx xxx, xx(x), xxx-xxx.
+```
+
 Software with our segmentation model is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s/1Q_3n1sHRCqzB56Sz54JSqw) and [Google Drive](https://drive.google.com/file/d/1-klszlNdlVBu8xbInkTYjnsokVglEOtr/view?usp=drive_link).
 
 ![Software](assets/software.png)
@@ -60,7 +65,7 @@ This repository can only be used for personal/research/non-commercial purposes. 
     author = {xxx},
     title = {xxx},
     booktitle = {xxx},
-    year={2024}
+    year={202x}
 }
 ```
 
