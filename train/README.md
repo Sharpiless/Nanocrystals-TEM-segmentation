@@ -28,6 +28,7 @@ pip install -r requirements.txt
 [To Do]
 
 The directory structure after pre-processing should be as below:
+
 ```
 sunrgbd
 ├── train
@@ -58,6 +59,7 @@ sunrgbd
 ## Train your model
 
 See:
+
 ```
 cd train
 bash run.sh
@@ -105,7 +107,9 @@ Use "--ckpt_path" to load pretrained checkpoints.
 ## Deploy your model in GUI
 
 First, add the model to GUI by clicking "Add custom torch model to GUI" in "Models".
+
 ![load custom model to GUI](../assets/load_model.png)
 
 Then, select the model by clicking "custom models" in "Other models".
+
 ![load custom model to GUI](../assets/load_model2.png)
