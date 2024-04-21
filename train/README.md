@@ -34,7 +34,7 @@ pip install -r requirements.txt
 The directory structure after pre-processing should be as below:
 
 ```
-sunrgbd
+data
 ├── train
     ├── images
         ├── xxx.png
