@@ -1,0 +1,2 @@
+configs/hrnet/cascade-rcnn_hrnetv2p-w40-20e_coco.py
+cascade_rcnn_hrnetv2p_w40_20e_coco_20200512_161112-75e47b04.pth

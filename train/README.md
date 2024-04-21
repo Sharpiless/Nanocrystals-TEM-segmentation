@@ -3,19 +3,23 @@
 A generalist algorithm for nanocrystal segmentation in transmission electron microscopy (TEM) images (v1.0).
 
 ## Installation
-
+```
 conda create -n sophon python=3.8
+conda activate sophon
+```
 
 here we use pytorch 1.11.0 and CUDA 11.3 for an example 
 
 ### install pytorch
 ```
 pip install https://download.pytorch.org/whl/cu113/torch-1.11.0%2Bcu113-cp38-cp38-linux_x86_64.whl
+pip install https://download.pytorch.org/whl/cu113/torchvision-0.12.0%2Bcu113-cp38-cp38-linux_x86_64.whl
 ```
 
-### install torchvision
+If you don't have cuda, install cpu version:
+
 ```
-pip install https://download.pytorch.org/whl/cu113/torchvision-0.12.0%2Bcu113-cp38-cp38-linux_x86_64.whl
+pip install torch==1.11.0 torchvision==0.12.0
 ```
 
 ### install other libs
@@ -59,6 +63,14 @@ sunrgbd
 We show one example of training data in "data/examples". They are also visualized as follows:
 
 ![Training data](../data/examples/visualization/1-0001_16.png)
+
+We show one example of training data in "data/weak_data_examples". The weak labels can be visualized as follows:
+
+![Weakly training label](../data/weak_data_examples/weak_labels/1-0001.png)
+
+Such weak labels can be generated using our detection model. 
+
+See [Preprocess Instruction](../preprocess/README.md) for more details.
 
 ## Train your model
 
