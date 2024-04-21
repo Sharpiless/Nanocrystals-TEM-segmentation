@@ -5,4 +5,4 @@ python train_ours.py \
     --epoch=100 \
     --save_path=runs/extra0312 \
     --labeled_data \
-    --extra_data
+    --ckpt_path=../ckpt/epoch28.pth

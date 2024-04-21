@@ -31,6 +31,8 @@ pip install -r requirements.txt
 
 [To Do]
 
+Please place your data under "data/train".
+
 The directory structure after pre-processing should be as below:
 
 ```
@@ -72,7 +74,7 @@ Such weak labels can be generated using our detection model.
 
 See [Preprocess Instruction](../preprocess/README.md) for more details.
 
-## Train your model
+## Finetune your model from the pretrained one
 
 See:
 
@@ -81,12 +83,17 @@ cd train
 bash run.sh
 ```
 
-The above command will run training process.
+Use "--ckpt_path" to load pretrained checkpoints. Here's other options:
 
+- --data-dir: where to save your data, we use "data" as example.
 - --labeled_data: use labeled dataset in "data/train".
 - --extra_data: use all the extra dataset in "data/extra_data".
 - --weak_data: use weakly-supervised dataset in "data/weak_data".
 - --save_path: where to save your model
+
+The above command will run training process.
+
+## Train your model from scratch
 
 An ideal training process is: pre-training and fine-tuning
 
@@ -117,8 +124,6 @@ python train_ours.py \
     --labeled_data \
     --ckpt_path=runs/extra_weak_pretrain/best.pth
 ```
-
-Use "--ckpt_path" to load pretrained checkpoints.
 
 ## Deploy your model in GUI
 
