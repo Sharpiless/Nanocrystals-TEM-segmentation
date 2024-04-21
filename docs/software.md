@@ -12,5 +12,15 @@ Software is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s
 
 Please refer to [Training Installation](train/README.md) for installation instructions.
 
+## Deploy your own model
+
+First, add the model to GUI by clicking "Add custom torch model to GUI" in "Models".
+
+![load custom model to GUI](../assets/load_model.png)
+
+Then, select the model by clicking "custom models" in "Other models".
+
+![load custom model to GUI](../assets/load_model2.png)
+
 ## Acknowledgments
 * The code is heavily borrowed from [Cellpose](https://github.com/MouseLand/cellpose), we thank the authors for their great effort.

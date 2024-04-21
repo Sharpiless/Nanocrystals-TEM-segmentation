@@ -4,7 +4,7 @@ A generalist algorithm for nanocrystal segmentation in transmission electron mic
 
 ## Download
 
-Download the trained detection model from [Google Drive](), and place it into "weights" folder:
+Download the trained detection model from [Google Drive](https://drive.google.com/file/d/1LjQG77xs1NLRVD_MJcI0GInNoZA7VXPX/view?usp=sharing), and place it into "weights" folder:
 
 ```
 preprocess
