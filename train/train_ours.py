@@ -37,17 +37,17 @@ def _loss_fn_weak(lbl1, lbl2, y, device):
 if __name__ == '__main__':
     torch.multiprocessing.set_start_method('spawn')
     parser = argparse.ArgumentParser(description='Train model on EMPS dataset.')
-    parser.add_argument('--data-dir', metavar='data_dir', type=str, help='Directory which contains the data.')
+    parser.add_argument('--data-dir', metavar='data_dir', type=str, help='directory which contains the data.')
     parser.add_argument('--device', metavar='device', type=str, default='cuda', help='device to train on (cuda or cpu)')
-    parser.add_argument('--im-size', metavar='im_size', type=tuple, default=(512, 512), help='Image size to load for training.')
+    parser.add_argument('--im-size', metavar='im_size', type=tuple, default=(512, 512), help='image size to load for training.')
     parser.add_argument('--labeled_data', action='store_true', help="increase h/w gradually for smoother texture")
-    parser.add_argument('--extra_data', action='store_true', help="increase h/w gradually for smoother texture")
-    parser.add_argument('--weak_data', action='store_true', help="increase h/w gradually for smoother texture")
-    parser.add_argument('--epochs', type=int, default=200, help='Image size to load for training.')
-    parser.add_argument('--batch_size', type=int, default=4, help='Image size to load for training.')
-    parser.add_argument('--lr', type=float, default=0.01, help='Image size to load for training.')
-    parser.add_argument('--save_path', type=str, help='Directory which contains the data.')
-    parser.add_argument('--ckpt_path', type=str, help='Directory which contains the data.')
+    parser.add_argument('--extra_data', action='store_true', help="whether to load extra dataset")
+    parser.add_argument('--weak_data', action='store_true', help="whether to load weakly-supervised data")
+    parser.add_argument('--epochs', type=int, default=200, help='epoches for training.')
+    parser.add_argument('--batch_size', type=int, default=4, help='batch size for training.')
+    parser.add_argument('--lr', type=float, default=0.01, help='learning rate for training.')
+    parser.add_argument('--save_path', type=str, help='save checkpoints locally.')
+    parser.add_argument('--ckpt_path', type=str, help='load checkpoints locally.')
     args = parser.parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
@@ -126,20 +126,22 @@ if __name__ == '__main__':
         
         masks = model.eval(test_data)[0]
         # check performance using ground truth labels
-        ap = metrics.average_precision(test_labels, masks)[0]
+        miou, ap = metrics.average_precision(test_labels, masks)[:2]
             
         ap50 = ap[:,0].mean()
         ap75 = ap[:,1].mean()
         ap90 = ap[:,2].mean()
+        miou = miou.mean()
             
         print("")
-        print(f">>> epoch: {epoch:04d} average precision at iou threshold 0.50 = {ap50:.3f}")
-        print(f">>> epoch: {epoch:04d} average precision at iou threshold 0.75 = {ap75:.3f}")
-        print(f">>> epoch: {epoch:04d} average precision at iou threshold 0.90 = {ap90:.3f}")
+        print(f">>> epoch: {epoch:04d} AP at iou threshold 0.50 = {ap50:.3f}")
+        print(f">>> epoch: {epoch:04d} AP at iou threshold 0.75 = {ap75:.3f}")
+        print(f">>> epoch: {epoch:04d} AP at iou threshold 0.90 = {ap90:.3f}")
+        print(f">>> epoch: {epoch:04d} mIOU = {miou:.3f}")
             
         if ap50 > best_ap50:
             best_ap50 = ap50
-            print(f">>> epoch: {epoch:04d} best average precision at iou threshold 0.50 = {best_ap50:.3f}")
+            print(f">>> epoch: {epoch:04d} best AP at iou threshold 0.50 = {best_ap50:.3f}")
             network.save_model(os.path.join(args.save_path, "best.pth"))
             
         lr_scheduler.step()
