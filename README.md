@@ -8,6 +8,16 @@ Software is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s
 
 ![Segmentation](assets/1-0001_visualization.png)
 
+## Comparison with Cellpose
+
+Cellpose:
+
+![Segmentation](assets/comparison/cellpose-spec1.png)
+
+Ours:
+
+![Ours](assets/comparison/ours1.png)
+
 ## Train your own model
 
 Please refer to [Training Installation](train/README.md) for installation instructions.
