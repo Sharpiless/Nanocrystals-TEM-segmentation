@@ -27,4 +27,4 @@ Please refer to [Training Installation](train/README.md) for installation instru
 Please refer to [Software Usage](docs/software.md) for software usage.
 
 ## Acknowledgments
-* The code is heavily borrowed from [Cellpose](https://github.com/MouseLand/cellpose), we thank the authors for their great effort.
+The code is heavily borrowed from [Cellpose](https://github.com/MouseLand/cellpose), we thank the authors for their great effort.
