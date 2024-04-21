@@ -1,8 +1,14 @@
 # <p>  <b>Sophon </b> </p>
 
-A generalist algorithm for nanocrystal segmentation in transmission electron microscopy (TEM) images (v1.0).
+## Abstract
 
-## Download
+For nanocrystal segmentation, a neural network based on U-Net is pretrained on our collected hybrid dataset and images with weak labels. The neural network contains an encoder and two decoders, and the output is a triplet: seed maps, horizontal gradients, and vertical gradients, where the horizontal and vertical gradients together solve for the instance maps. The true labels for this triplet can be computed from the segmentation labels' masks and undergo supervised training. For unlabeled data, we use the generated weak label binary masks to partially supervise only the seed maps.
+
+The generation pipeline for the weak labels are shown:
+
+![Weakly-learning](../assets/weak-data.png)
+
+## Download detection model checkpoints
 
 Download the trained detection model from [Google Drive](https://drive.google.com/file/d/1LjQG77xs1NLRVD_MJcI0GInNoZA7VXPX/view?usp=sharing), and place it into "weights" folder:
 

@@ -6,6 +6,10 @@
 
 Sophon is a robust model for nanocrystal segmentation in transmission electron microscopy (TEM) images. The model was trained on large-scale mixed datasets along with large amount of unlabeled TEM image data. Besides, with our carefully designed weak label generation pipeline and weakly supervised learning process, our segmentation model achieves superior performance for robust nanocrystal segmentation.
 
+We show the learning process in the following:
+
+![Weakly-learning](assets/weakly-learning.png)
+
 ## Dataset preparation
 
 | Datasets         | Type         | Num of Images | Number of Instances | Link      |
