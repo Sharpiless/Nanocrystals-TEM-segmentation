@@ -56,6 +56,10 @@ sunrgbd
     ├── ...
 ```
 
+We show one example of training data in "data/examples". They are also visualized as follows:
+
+![Training data](../data/examples/visualization/1-0001_16.png)
+
 ## Train your model
 
 See:
