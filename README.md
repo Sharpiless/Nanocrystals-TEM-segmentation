@@ -32,7 +32,13 @@ We show the learning process in the following:
 
 We show the performance on our validation dataset. "OD" indicates our labeled dataset, "W" indicates weakly supervised learning on unlabeld data, and "LD" indicates extra datasets:
 
-![Performance](assets/performance.png)
+| Category | AP_50 | AP_75 | AP_90 | mIoU |
+|----------|-------|-------|-------|------|
+| OD       | 68.5  | 51.6  | 12.1  | 69.3 |
+| OD+W     | 80.1  | 66.3  | 18.1  | 81.9 |
+| OD+LD    | 81.3  | 72.8  | 22.9  | 81.9 |
+| OD+LD+W  | **82.5**  | **70.1**  | **25.3**  | **84.5** |
+
 
 ## Results
 
