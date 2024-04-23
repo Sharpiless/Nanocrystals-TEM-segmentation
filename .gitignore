@@ -1,0 +1,16 @@
+
+# GitHub Python GitIgnore ----------------------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+*__pycache__/*
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+best.pth
+otuput/
+CellPose.md
+preprocess/dist
+preprocess/mmdet.egg-info
+preprocess/weights

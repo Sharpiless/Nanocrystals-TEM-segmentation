@@ -26,9 +26,13 @@ Our modified software support automatically calibrate the scale using modern OCR
 
 ![Calibration](../assets/cailbration1.png)
 
-![Calibration](../assets/cailbration2.png)
+Or you can input manually in the text box. Press **Enter** after inputing.
 
-You can also input manually in the text box.
+![Calibration](../assets/cailbration3.png)
+
+Here is the calibration results (automatical):
+
+![Calibration](../assets/cailbration2.png)
 
 ## Run segmentation
 
