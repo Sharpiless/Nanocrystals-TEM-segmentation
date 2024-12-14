@@ -2,6 +2,8 @@
 
 [Paper]() | [Dataset]()
 
+- News: Sophon software v2.1 released at [https://github.com/Sharpiless/Nanocrystals-TEM-segmentation/releases/tag/v2.1](https://github.com/Sharpiless/Nanocrystals-TEM-segmentation/releases/tag/v2.1)
+
 ## Abstract
 
 Sophon is a robust model for nanocrystal segmentation in transmission electron microscopy (TEM) images. The model was trained on large-scale mixed datasets along with large amount of unlabeled TEM image data. Besides, with our carefully designed weak label generation pipeline and weakly supervised learning process, our segmentation model achieves superior performance for robust nanocrystal segmentation.
