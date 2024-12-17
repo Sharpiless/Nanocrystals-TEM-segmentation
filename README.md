@@ -57,7 +57,7 @@ If you use Sophon, please cite our [paper]():
 xxx, xxx, & xxx. (202x). xxxx: xxxxxx xxxxx xxxxx. Xxxx xxx, xx(x), xxx-xxx.
 ```
 
-Software with our segmentation model is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s/1Q_3n1sHRCqzB56Sz54JSqw) and [Google Drive](https://drive.google.com/file/d/1-klszlNdlVBu8xbInkTYjnsokVglEOtr/view?usp=drive_link).
+Software with our segmentation model will be available once the paper is accepted.
 
 ![Software](assets/software.png)
 
