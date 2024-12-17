@@ -2,7 +2,6 @@
 
 [Paper]() | [Dataset]()
 
-- News: Sophon software v2.1 released at [https://github.com/Sharpiless/Nanocrystals-TEM-segmentation/releases/tag/v2.1](https://github.com/Sharpiless/Nanocrystals-TEM-segmentation/releases/tag/v2.1)
 
 ## Abstract
 
