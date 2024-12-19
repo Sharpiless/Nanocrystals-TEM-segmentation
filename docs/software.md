@@ -2,8 +2,6 @@
 
 A generalist algorithm for nanocrystal segmentation in transmission electron microscopy (TEM) images (v1.0).
 
-Software is available at [Baidu Disk (提取码：gbnt)](https://pan.baidu.com/s/1Q_3n1sHRCqzB56Sz54JSqw) and [Google Drive](https://drive.google.com/file/d/1-klszlNdlVBu8xbInkTYjnsokVglEOtr/view?usp=drive_link).
-
 ![Software](../assets/software.png)
 
 ![Segmentation](../assets/1-0001_visualization.png)
