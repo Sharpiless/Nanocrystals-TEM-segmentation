@@ -13,6 +13,10 @@ We show the learning process in the following:
 
 ## Dataset preparation
 
+Dataset for training and evaluation can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1us6_VNDlI1MZhPdavv4OxJMFF1GHO4El?usp=sharing).
+
+Our training, testing, and additional datasets from 10 other publications can be downloaded from the link above. Due to the large size of the weakly labeled dataset, it is not included in the shared folder. If you would like access to it, please contact us at: liangyingping@bit.edu.cn.
+
 | Datasets         | Type         | Num of Images | Number of Instances | Link      |
 | ---------------- | ------------ | ------------- | ------------------- | --------- |
 | Ours (labeled)   | Nanocrystals | 523           | 49,976              | Manual    |
