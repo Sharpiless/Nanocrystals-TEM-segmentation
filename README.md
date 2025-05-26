@@ -19,8 +19,8 @@ Our training, testing, and additional datasets from 10 other publications can be
 
 | Datasets         | Type         | Num of Images | Number of Instances | Link      |
 | ---------------- | ------------ | ------------- | ------------------- | --------- |
-| Ours (labeled)   | Nanocrystals | 523           | 49,976              | Manual    |
-| Ours (unlabeled) | Nanocrystals | 7344          | 918,531             | Automatic |
+| Ours (labeled, OD)   | Nanocrystals | 523           | 49,976              | Manual    |
+| Ours (unlabeled, W) | Nanocrystals | 7344          | 918,531             | Automatic |
 | Extra Data 1     | Nanocrystals | 80            | 8,881  | [Workflow towards automated segmentation of agglomerated, non-spherical particles from electron microscopy images using artificial neural networks](https://www.nature.com/articles/s41598-021-84287-6) |
 | Extra Data 2     | Cell         | 540           | 67,724 | [Cellpose: a generalist algorithm for cellular segmentation](https://www.nature.com/articles/s41592-020-01018-x) |
 | Extra Data 3     | Cell         | 493           | 1,885  | [An Instance Segmentation Dataset of Yeast Cells in Microstructures](https://christophreich1996.github.io/yeast_in_microstructures_dataset/) |
@@ -32,6 +32,7 @@ Our training, testing, and additional datasets from 10 other publications can be
 | Extra Data 11    | Cell         | 1169          | 81,915 | [Blood Cell Segmentation Dataset](https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask) |
 | Extra Data 12    | Nanocrystals | 465           | 11,541 | [Bayesian Particle Instance Segmentation for Electron Microscopy Image Quantification](https://pubs.acs.org/doi/full/10.1021/acs.jcim.0c01455) |
 
+The dataset for evaluation contains 80 images with manual labels.
 
 ## Performance
 
