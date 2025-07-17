@@ -2,6 +2,8 @@
 
 A generalist algorithm for nanocrystal segmentation in transmission electron microscopy (TEM) images (v1.0).
 
+Download the software from https://github.com/Sharpiless/Nanocrystals-TEM-segmentation/releases/tag/v2.1
+
 ![Software](../assets/software.png)
 
 ![Segmentation](../assets/1-0001_visualization.png)
