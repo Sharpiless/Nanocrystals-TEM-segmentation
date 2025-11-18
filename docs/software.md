@@ -10,7 +10,9 @@ https://github.com/user-attachments/assets/b16d4648-ace7-4285-81e3-0c6b2e63e904
 
 Download the software from https://github.com/Sharpiless/Nanocrystals-TEM-segmentation/releases/tag/v2.1
 
-通过网盘分享的文件：Sophon2.1.zip 链接: https://pan.baidu.com/s/1TIDd_XCfUVTQHiOkB2iKxw 提取码: 2wqn 
+通过网盘分享的文件：Sophon2.2.zip
+链接: https://pan.baidu.com/s/19-7_h-9r-D7SPeH0SR2QOQ 提取码: 39nx 
+--来自百度网盘超级会员v4的分享
 
 ![Software](../assets/software.png)
 
