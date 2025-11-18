@@ -58,7 +58,13 @@ Please refer to [Training Installation](train/README.md) for installation instru
 
 If you use Sophon, please cite our [paper]():
 ```
-xxx, xxx, & xxx. (202x). xxxx: xxxxxx xxxxx xxxxx. Xxxx xxx, xx(x), xxx-xxx.
+@inproceedings{DLMCNS2025,
+    author = {Kai Gu, Yingping Liang, Jiaming Su, Peihan Sun, Jia Peng, Naihua Miao, Zhimei Sun, Ying Fu, Haizheng Zhong, Jun Zhang},
+    title = {Deep Learning Models for Colloidal Nanocrystal Synthesis},
+    journal = {ACS Nano},
+    doi = {10.1021/acsnano.5c09134},
+    year={2025}
+}
 ```
 
 Software with our segmentation model will be available once the paper is accepted.
